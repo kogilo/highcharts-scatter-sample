@@ -31,7 +31,7 @@
         },
 
         subtitle: {
-          text: 'View <a href="data-scatter.csv">source data</a> from <a href="http://trendct.org/2016/05/06/wealth-and-grades-compare-connecticuts-school-districts/">TrendCT</a>',
+          text: 'View <a href="data-scatter.csv">source data</a> from <a href="http://trendct.org/2016/05/06/wealth-and-grades-compare-connecticuts-school-districts/">TrendCT</a>, NY Times, Stanford Education Data Archive, American Community Survey 2009-13',
           useHTML: true
         },
 
@@ -52,7 +52,7 @@
 
         xAxis: {
           title: {
-            text: 'Median family income'  // EDIT to insert horizontal x-axis label
+            text: 'Median household income'  // EDIT to insert horizontal x-axis label
           }
         },
 
@@ -83,7 +83,7 @@
               // EDIT tooltip text labels below
               html = '<table>';
               html += '<tr><th colspan="2"><h3>' + point.name + '</h3></th></tr>';
-              html += '<tr><th>Median family income:</th><td>$' + comma(point.x) + '</td></tr>';
+              html += '<tr><th>Median household income:</th><td>$' + comma(point.x) + '</td></tr>';
               html += '<tr><th>Grades above/below average:</th><td>' + point.y + '</td></tr>';
               html += '</table>';
 
