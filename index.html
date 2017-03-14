@@ -31,7 +31,7 @@
         },
 
         subtitle: {
-          text: 'View <a href="data-scatter.csv">source data</a> from <a href="http://trendct.org/2016/05/06/wealth-and-grades-compare-connecticuts-school-districts/">TrendCT</a>, NY Times, Stanford Education Data Archive, American Community Survey 2009-13',
+          text: 'View <a href="data-scatter.csv">source data</a> from TrendCT, NY Times, Stanford Ed Data Archive, American Community Survey',
           useHTML: true
         },
 
@@ -80,9 +80,9 @@
             useHTML: true,
             formatter: function() {
               point = this.point;
-              // EDIT tooltip text labels below
+              // EDIT tooltip text labels below to match your data
               html = '<table>';
-              html += '<tr><th colspan="2"><h3>' + point.name + '</h3></th></tr>';
+              html += '<tr><th colspan="2"><h3>District: ' + point.name + '</h3></th></tr>';
               html += '<tr><th>Median household income:</th><td>$' + comma(point.x) + '</td></tr>';
               html += '<tr><th>Grades above/below average:</th><td>' + point.y + '</td></tr>';
               html += '</table>';
